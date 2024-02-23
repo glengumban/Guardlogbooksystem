@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2023 at 09:27 AM
+-- Generation Time: Feb 23, 2024 at 07:49 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `guard_php`
+-- Database: `logbook`
 --
 
 -- --------------------------------------------------------
@@ -42,8 +42,7 @@ CREATE TABLE `personal_info` (
 --
 
 INSERT INTO `personal_info` (`p_id`, `u_id`, `fname`, `lname`, `address`, `contact`, `vehicle_info`) VALUES
-(2, 8, 'cute', 'cruz', 'purok 1', 9656545, 'Hilux'),
-(4, 8, 'ana', 'alvarez', 'phase 1', 2147483647, 'toyota 123 palte number.');
+(13, 13, 'Glen', 'Gumban', 'Oringao, Kabankalan City', 912345678, 'Hilux');
 
 -- --------------------------------------------------------
 
@@ -64,7 +63,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`u_id`, `u_fname`, `u_lname`, `u_email`, `u_pass`) VALUES
-(8, 'cute', 'cruz', 'cute@gmail.com', '$2y$10$oo0N9RwnFd0HgyrLYVdGjewucieO7daYtZAtHk5WxUFC.v67nCw3a');
+(13, 'Glen', 'Gumban', 'Glen@gmail.com', '$2y$10$5k2RbSVOL4Z7vfPKF6AtKuJ6jPa0Hllhf0dtccAAB9/7VpiLryaRu');
 
 --
 -- Indexes for dumped tables
@@ -90,13 +89,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `personal_info`
 --
 ALTER TABLE `personal_info`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
